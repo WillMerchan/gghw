@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>GlobalGiving</title>
+</head>
+
+<body>
+  <header class="border_default border_top0 border_left0 border_right0">
+    <div class="grid-parent layout_centerVertical">
+      <div class="grid-12 grid-parent layout_centerVertical layout_rel">
+        <div class="grid-8 grid-md-5 grid-xl-4 grid-parent layout_centerVertical">
+          <a href="/" class="grid-12 grid-xl-5 box_horizontalPadded2 box_verticalPadded2 layout_centerVertical">
+            <img src="https://www.globalgiving.org/img/logos/gg_horizontal_color_300.png" srcset="
+                  https://www.globalgiving.org/img/logos/gg_horizontal_color_300.png 1x,
+                  https://www.globalgiving.org/img/logos/gg_horizontal_color_600.png 2x
+                " alt="GlobalGiving homepage" style="width:220px; max-width:100%;" />
+          </a>
+
+          <span class="grid-0 grid-xl-flex box_leftPadded2 box_verticalPadded3 layout_rel headerSearch-parent">
+            &nbsp;<a href="/search/"
+              class="box_leftPaddedHalf text_allCaps col_ggPrimary1DarkText zindex_popupTop layout_rel">Explore&nbsp;Projects</a>
+            &nbsp;&nbsp;
+            <img src="https://www.globalgiving.org/img/svg/icons/search_orange.svg" width="16" height="16"
+              alt="magnifying glass" style="margin-top: 2px;" />
+            <div
+              class="grid-parent layout_abs layout_abs_left layout_abs_top zindex_popup border_default col_white headerSearch-box">
+              <span class="grid-3"></span>
+              <form
+                class="grid-9 border_default layout_centerVertical layout_alignRight box_rightPadded2 box_topMarginHalf"
+                action="/search/">
+                <input class="grid-11 input_text test-searchInput" type="text" placeholder="Search by keyword"
+                  name="keywords" title="Search by keyword" />
+                <input type="image" src="https://www.globalgiving.org/img/svg/icons/search.svg" width="18"
+                  alt="search" />
+              </form>
+              <div class="grid-12 box_verticalPadded3 text_fontSizeSmall col_ggPrimary5LightText">
+                Find a vetted, verified project that you want to make a
+                donation to:
+              </div>
+              <div class="grid-4 text_7n text_fontSizeSmall">
+                <div class="grid-12 col_defaultText box_bottomPadded2">
+                  Top Themes
+                </div>
+                <div class="box_bottomPadded1">
+                  <a href="/themes/education/" class="col_ggPrimary5LightText">Education</a>
+                </div>
+                <div class="box_bottomPadded1">
+                  <a href="/themes/women-and-girls/" class="col_ggPrimary5LightText">Women&nbsp;and&nbsp;Girls</a>
+                </div>
+                <div class="box_bottomPadded1">
+                  <a href="/themes/health/" class="col_ggPrimary5LightText">Health</a>
+                </div>
+                <div class="box_bottomPadded1">
+                  <a href="/themes/economic-development/" class="col_ggPrimary5LightText">Economic&nbsp;Development</a>
+                </div>
+                <div class="box_bottomPadded1">
+                  <a href="/themes/environment/" class="col_ggPrimary5LightText">Environment</a>
+                </div>
+                <div class="box_bottomPadded3">
+                  <a href="/themes/hunger/" class="col_ggPrimary5LightText">Hunger</a>
+                </div>
+              </div>
+              <div class="grid-8 text_7n text_fontSizeSmall">
+                <div class="grid-parent">
+                  <div class="grid5-2">
+                    <div class="grid-12 col_defaultText box_bottomPadded2">
+                      Top Countries
+                    </div>
+                    <div class="box_bottomPadded1">
+                      <a href="/locations/india/" class="col_ggPrimary5LightText">India</a>
+                    </div>
+                    <div class="box_bottomPadded1">
+                      <a href="/locations/united-states/" class="col_ggPrimary5LightText">United&nbsp;States</a>
+                    </div>
+                    <div class="box_bottomPadded1">
+                      <a href="/locations/kenya/" class="col_ggPrimary5LightText">Kenya</a>
+                    </div>
+                    <div class="box_bottomPadded1">
+                      <a href="/locations/nepal/" class="col_ggPrimary5LightText">Nepal</a>
+                    </div>
+                    <div class="box_bottomPadded1">
+                      <a href="/locations/pakistan/" class="col_ggPrimary5LightText">Pakistan</a>
+                    </div>
+                    <a href="/locations/mexico/" class="col_ggPrimary5LightText">Mexico</a>
+                  </div>
+                  <div class="grid5-3">
+                    <div class="grid-12 box_bottomPadded1">
+                      <a href="/search/?sortField=total_raised_usd"
+                        class="col_defaultText">Top&nbsp;Funded&nbsp;Projects</a>
+                    </div>
+                    <div class="grid-12 box_bottomPadded1">
+                      <a href="/search/?sortField=approveddt_orig" class="col_defaultText">Newest&nbsp;Projects</a>
+                    </div>
+                    <div class="grid-12 box_bottomPadded1">
+                      <a href="/search/?sortField=percent_funded"
+                        class="col_defaultText">Projects&nbsp;Closest&nbsp;to&nbsp;Goal</a>
+                    </div>
+                    <div class="grid-12 box_bottomPadded1">
+                      <a href="/search/?selectedRecognitions=staffFavorite"
+                        class="col_defaultText">Staff&nbsp;Favorites</a>
+                    </div>
+                    <div class="grid-12 box_bottomPadded1">
+                      <a href="/search/?selectedRecognitions=effectiveNonprofit"
+                        class="col_defaultText">Most&nbsp;Effective</a>
+                    </div>
+                    <div class="grid-12 box_bottomPadded1">
+                      <a href="/search/?selectedRecognitions=siteVisitVerified"
+                        class="col_defaultText">Site&nbsp;Visit&nbsp;Verified</a>
+                    </div>
+                    <a href="/search/?selectedRecognitions=topRanked"
+                      class="col_defaultText">Top&nbsp;Ranked&nbsp;Projects</a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-12 grid-parent box_bottomPadded1">
+                <div class="grid5-3">
+                  <a href="/search/" class="btn btn_simple">Browse All Projects</a>
+                </div>
+                <div class="grid5-2">
+                  <a href="/themes/disaster-recovery/" class="col_ggSecondary3Text">Disaster Relief Projects</a>
+                </div>
+              </div>
+              <hr class="grid-12" />
+              <div class="grid-12 grid-parent text_fontSizeSmall">
+                <a class="grid-4 col_defaultText box_topPadded2 box_bottomPadded1" href="/gifts/">Give a Gift Card</a>
+                <div class="grid-8 grid-parent">
+                  <a class="grid5-2 col_defaultText box_topPadded2 box_bottomPadded1" href="/gifts/inhonor/">Donate in
+                    Honor</a>
+                  <a class="grid5-3 col_defaultText box_topPadded2 box_bottomPadded1" href="/fundraisers/">Start a
+                    Fundraiser</a>
+                </div>
+                <a class="grid-4 col_defaultText box_topPadded1" href="/gifts/redeem.html">Redeem a Gift Card</a>
+                <a class="grid-8 col_defaultText box_topPadded1" href="/project-of-the-month-club/">Project of the Month
+                  Club</a>
+              </div>
+            </div>
+          </span>
+        </div>
+
+        <div class="grid-0 grid-md-4 grid-ml-5 grid-xl-0 layout_alignRight">
+          <span class="box_leftPadded2 layout_centerVertical" id="js-headerCta2">
+            <a href="/apply/" class="btn btn_simple btn_transparent btn_ggPrimary3"
+              id="js-headerCtaBtn2">Apply&nbsp;to&nbsp;Join</a>
+          </span>
+        </div>
+        <div class="grid-0 grid24-xl-13 grid-xl-flex text_fontSizeSmall ">
+          <nav class="grid-12 grid-parent layout_centerVertical layout_alignRight">
+            <div class="grid-12">
+              <a href="/aboutus/" class="col_ggPrimary5Text link_subtle text_4n">About&nbsp;Us</a>
+              <a href="/learn/" class="col_ggPrimary5Text link_subtle box_leftPadded2 text_4n">Learn&nbsp;Library</a>
+              <a href="/companies/" class="col_ggPrimary5Text link_subtle box_leftPadded2 text_4n">Corporate<span
+                  class="grid-0 grid-xxl-inline">&nbsp;Giving</span></a>
+              <a href="/disasters/" class="col_ggPrimary5Text link_subtle box_leftPadded2 text_4n">Disasters</a>
+              <a href="/gifts/" class="col_ggPrimary1Text link_subtle box_leftPadded2 text_7n"><img
+                  src="https://www.globalgiving.org/img/icons/giftcard_orange.svg" alt="Gift Card" border="0"
+                  style="padding-right: 5px; vertical-align: middle; height: 19px;" />Gift Cards</a>
+              <span class="box_leftPadded2 layout_centerVertical" id="js-headerCta1">
+                <a href="/apply/" class="btn btn_simple btn_transparent btn_ggPrimary3"
+                  id="js-headerCtaBtn1">Apply&nbsp;to&nbsp;Join</a>
+              </span>
+            </div>
+          </nav>
+        </div>
+        <div class="grid-4 grid-md-3 grid-ml-2 grid24-xl-3 layout_centerVertical layout_alignRight box_rightPadded2">
+          <a href="/dy/v2/checkout/billing/" class="layout_centerVertical layout_rel link_subtle">
+            <img src="https://www.globalgiving.org/img/svg/icons/giving_cart.svg" width="35" height="35"
+              class="layout_block" alt="giving cart" />
+            <span class="js-cartItems"></span>
+          </a>
+          <span class="col_ggPrimary3Text box_leftPadded5 box_rightPadded6 layout_inlineBlock js-login">
+            <a id="login_link" href="/dy/v2/login/form.html?andthen=https://www.globalgiving.org/">Login</a><br />
+          </span>
+        </div>
+      </div>
+      <nav
+        class="grid-12 grid-xl-0 layout_centerVertical border_default border_left0 border_right0 border_bottom0 box_verticalPadded2 box_horizontalPadded1 text_fontSizeSmall layout_center">
+        <a href="/search/" class="grid-xl-0 text_allCaps col_ggPrimary1DarkText layout_rel"
+          style="white-space: nowrap;"><img src="https://www.globalgiving.org/img/svg/icons/search_orange.svg"
+            width="16" height="16" alt="magnifying glass"
+            style="vertical-align: middle;" /><span>&nbsp;Explore</span><span
+            class="grid-0 grid-md-inline">&nbsp;Projects</span></a><a href="/aboutus/"
+          class="col_ggPrimary5Text link_subtle text_4n box_leftPadded3">About<span
+            class="grid-0 grid-ml-inline">&nbsp;Us</span></a><a href="/learn/"
+          class="col_ggPrimary5Text link_subtle text_4n box_horizontalPadded3">Learn<span
+            class="grid-0 grid-ml-inline">&nbsp;Library</span></a><a href="/companies/"
+          class="grid-0 grid-sm-inline col_ggPrimary5Text link_subtle text_4n box_rightPadded3">Corporate<span
+            class="grid-0 grid-lg-inline">&nbsp;Giving</span></a><a href="/disasters/"
+          class="col_ggPrimary5Text link_subtle text_4n box_rightPadded3">Disasters</a><a href="/gifts/"
+          class="grid-0 grid-md-inline col_ggPrimary1Text link_subtle text_7n"><img
+            src="https://www.globalgiving.org/img/icons/giftcard_orange.svg" alt="Gift Card" border="0"
+            style="padding-right: 5px; vertical-align: middle; height: 19px;" class="grid-0 grid-ml-inline" />Gift<span
+            class="grid-0 grid-ml-inline"> Card</span>s</a>
+      </nav>
+    </div>
+  </header>
+  <div class="grid-parent js-tileParent">
+    <div class="grid-12 grid-lg-6 grid-spacer js-tileMain">
+      <div class="tile tile-lg col_ggSecondary1Darker layout_rel" style="height: 472px;">
+        <a href="https://www.globalgiving.org/projects/computer-literacy-for-kenyan-schoolchildren/"><img
+            src="https://files.globalgiving.org/pfil/13015/pict_featured_large.jpg?m=1575297757000" class="img-cover"
+            id="js-mainPhoto" srcset="
+                https://files.globalgiving.org/pfil/13015/pict_featured.jpg?m=1575297757000        480w,
+                https://files.globalgiving.org/pfil/13015/pict_featured_large.jpg?m=1575297757000  920w,
+                https://files.globalgiving.org/pfil/13015/pict_featured_jumbo.jpg?m=1575297757000 1840w
+              " sizes="(min-width: 64em) 50vw, 100vw" alt="Empower, Engage, Educate in Rural Kenya!" /></a>
+        <div class="tile-content col_whiteText">
+          <a href="https://www.globalgiving.org/projects/computer-literacy-for-kenyan-schoolchildren/"><span
+              class="link_linkify text_fontSizeZero">Empower, Engage, Educate in Rural Kenya!</span></a>
+
+          <div class="col_ggSecondary1LighterText">
+            <a href="https://www.globalgiving.org/dy/v2/content/search.html?q=*&amp;fq=country:Kenya"
+              class="col_ggSecondary1LighterText text_fontSizeSmaller text_allCaps zindex_linkify layout_rel">Kenya</a>
+            <h2 class="text_fontSizeLarger text_title text_4n box_topMarginHalf">
+              <a href="https://www.globalgiving.org/projects/computer-literacy-for-kenyan-schoolchildren/"
+                class="link_subtle col_whiteText zindex_linkify layout_rel">Empower, Engage, Educate in Rural Kenya!</a>
+            </h2>
+          </div>
+          <div class="tile-hidden layout_center">
+            <a href="https://www.globalgiving.org/projects/computer-literacy-for-kenyan-schoolchildren/"
+              class="grid-6 btn btn_short box_topMargin1 zindex_linkify">Donate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-12 grid-lg-6 grid-parent layout_hideOverflow js-tileSecondary">
+      <div class="grid-6 grid-spacer">
+        <div class="tile col_ggSecondary1Darker layout_rel" style="height: 235px;">
+          <a href="https://www.globalgiving.org/projects/projectmaji/"><img
+              src="https://files.globalgiving.org/pfil/32263/pict_featured.jpg?m=1572466399000" class="img-cover"
+              srcset="
+                  https://files.globalgiving.org/pfil/32263/pict_featured.jpg?m=1572466399000        480w,
+                  https://files.globalgiving.org/pfil/32263/pict_featured_large.jpg?m=1572466399000  920w,
+                  https://files.globalgiving.org/pfil/32263/pict_featured_jumbo.jpg?m=1572466399000 1840w
+                " sizes="(min-width: 64em) 25vw, 50vw" alt="Sustainable Solar-Powered Water Kiosks in Ghana" /></a>
+          <div class="tile-content col_whiteText">
+            <a href="https://www.globalgiving.org/projects/projectmaji/"><span
+                class="link_linkify text_fontSizeZero">Sustainable Solar-Powered Water Kiosks in Ghana</span></a>
+
+            <div class="col_ggSecondary1LighterText text_lineHeightNatural">
+              <a href="/dy/v2/content/search.html?q=*&amp;fq=country:Ghana"
+                class="col_ggSecondary1LighterText text_fontSizeSmaller text_allCaps zindex_linkify layout_rel">Ghana</a>
+              <h4 class="text_fontSizeBase text_lineHeightMedium box_topMargin1">
+                <a href="/projects/projectmaji/" class="link_subtle col_whiteText zindex_linkify layout_rel">Sustainable
+                  Solar-Powered Water Kiosks in Ghana</a>
+              </h4>
+            </div>
+            <div class="tile-hidden">
+              <a href="https://www.globalgiving.org/projects/projectmaji/"
+                class="grid-12 btn btn_short box_topMargin2 zindex_linkify">Donate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-6 grid-spacer">
+        <div class="tile col_ggSecondary1Darker layout_rel" style="height: 235px;">
+          <a href="/projects/emergency-vet-care-for-pets-of-the-homeless/"><img
+              src="https://files.globalgiving.org/pfil/16863/pict_featured.jpg?m=1574791090000" class="img-cover"
+              srcset="
+                  https://files.globalgiving.org/pfil/16863/pict_featured.jpg?m=1574791090000       480w,
+                  https://files.globalgiving.org/pfil/16863/pict_featured_large.jpg?m=1574791090000 920w
+                " sizes="(min-width: 64em) 25vw, 50vw" alt="Emergency Veterinary Care for Pets of the Homeless" /></a>
+          <div class="tile-content col_whiteText">
+            <a href="/projects/emergency-vet-care-for-pets-of-the-homeless/"><span
+                class="link_linkify text_fontSizeZero">Emergency Veterinary Care for Pets of the Homeless</span></a>
+
+            <div class="col_ggSecondary1LighterText text_lineHeightNatural">
+              <a href="/dy/v2/content/search.html?q=*&amp;fq=country:United%20States"
+                class="col_ggSecondary1LighterText text_fontSizeSmaller text_allCaps zindex_linkify layout_rel">United
+                States</a>
+              <h4 class="text_fontSizeBase text_lineHeightMedium box_topMargin1">
+                <a href="/projects/emergency-vet-care-for-pets-of-the-homeless/"
+                  class="link_subtle col_whiteText zindex_linkify layout_rel">Emergency Veterinary Care for Pets of the
+                  Homeless</a>
+              </h4>
+            </div>
+            <div class="tile-hidden">
+              <a href="/projects/emergency-vet-care-for-pets-of-the-homeless/"
+                class="grid-12 btn btn_short box_topMargin2 zindex_linkify">Donate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-6 grid-spacer">
+        <div class="tile col_ggSecondary1Darker layout_rel" style="height: 235px;">
+          <a href="/projects/projectg-empowering-girls/"><img
+              src="https://files.globalgiving.org/pfil/38581/pict_featured.jpg?m=1575296295000" class="img-cover"
+              srcset="
+                  https://files.globalgiving.org/pfil/38581/pict_featured.jpg?m=1575296295000        480w,
+                  https://files.globalgiving.org/pfil/38581/pict_featured_large.jpg?m=1575296295000  920w,
+                  https://files.globalgiving.org/pfil/38581/pict_featured_jumbo.jpg?m=1575296295000 1840w
+                " sizes="(min-width: 64em) 25vw, 50vw" alt="Empower Cambodian Girls with Hygiene and Education" /></a>
+          <div class="tile-content col_whiteText">
+            <a href="/projects/projectg-empowering-girls/"><span class="link_linkify text_fontSizeZero">Empower
+                Cambodian Girls with Hygiene and Education</span></a>
+
+            <div class="col_ggSecondary1LighterText text_lineHeightNatural">
+              <a href="/dy/v2/content/search.html?q=*&amp;fq=country:Cambodia"
+                class="col_ggSecondary1LighterText text_fontSizeSmaller text_allCaps zindex_linkify layout_rel">Cambodia</a>
+              <h4 class="text_fontSizeBase text_lineHeightMedium box_topMargin1">
+                <a href="/projects/projectg-empowering-girls/"
+                  class="link_subtle col_whiteText zindex_linkify layout_rel">Empower Cambodian Girls with Hygiene and
+                  Education</a>
+              </h4>
+            </div>
+            <div class="tile-hidden">
+              <a href="/projects/projectg-empowering-girls/"
+                class="grid-12 btn btn_short box_topMargin2 zindex_linkify">Donate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-6 grid-spacer">
+        <div class="tile col_ggSecondary1Darker layout_rel" style="height: 235px;">
+          <a href="/projects/gifting-sight-to-2500-blind-children-pakistan/"><img
+              src="https://files.globalgiving.org/pfil/14597/pict_featured.jpg?m=1576786597000" class="img-cover"
+              srcset="
+                  https://files.globalgiving.org/pfil/14597/pict_featured.jpg?m=1576786597000        480w,
+                  https://files.globalgiving.org/pfil/14597/pict_featured_large.jpg?m=1576786597000  920w,
+                  https://files.globalgiving.org/pfil/14597/pict_featured_jumbo.jpg?m=1576786597000 1840w
+                " sizes="(min-width: 64em) 25vw, 50vw" alt="Sight for 4000 Poor Blind Children in Pakistan" /></a>
+          <div class="tile-content col_whiteText">
+            <a href="/projects/gifting-sight-to-2500-blind-children-pakistan/"><span
+                class="link_linkify text_fontSizeZero">Sight for 4000 Poor Blind Children in Pakistan</span></a>
+
+            <div class="col_ggSecondary1LighterText text_lineHeightNatural">
+              <a href="/dy/v2/content/search.html?q=*&amp;fq=country:Pakistan"
+                class="col_ggSecondary1LighterText text_fontSizeSmaller text_allCaps zindex_linkify layout_rel">Pakistan</a>
+              <h4 class="text_fontSizeBase text_lineHeightMedium box_topMargin1">
+                <a href="/projects/gifting-sight-to-2500-blind-children-pakistan/"
+                  class="link_subtle col_whiteText zindex_linkify layout_rel">Sight for 4000 Poor Blind Children in
+                  Pakistan</a>
+              </h4>
+            </div>
+            <div class="tile-hidden">
+              <a href="/projects/gifting-sight-to-2500-blind-children-pakistan/"
+                class="grid-12 btn btn_short box_topMargin2 zindex_linkify">Donate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="triangle-parent">
+    <div class="triangle triangle_bottom triangle_small triangle_white grid-0 grid-lg-12 js-selector2"
+      style="left: 211px;"></div>
+  </div>
+  <div
+    class="grid-parent col_ggPrimary5VeryLight box_horizontalPadded2 layout_center layout_centerVertical col_ggPrimary5Text">
+    <span class="grid-12 grid-lg-1 text_fontSizeSmall box_verticalPadded2 text_allCaps">Explore Projects:</span>
+
+    <a class="grid-4 grid-md-2 grid-lg-1 text_fontSizeSmall box_verticalPadded2 col_ggPrimary5DarkText js-searchFilterFeatured js-selector2-target"
+      href="javascript:void(0)" data-ol-has-click-handler="">Featured</a>
+    <a class="grid-4 grid-md-2 grid-lg-1 text_fontSizeSmall box_verticalPadded2 col_ggPrimary5DarkText js-searchFilter"
+      href="javascript:void(0)" data-filter="sortField=approveddt_orig" data-ol-has-click-handler="">Newest</a>
+    <a class="grid-4 grid-md-2 grid-lg-1 text_fontSizeSmall box_verticalPadded2 col_ggPrimary5DarkText js-searchFilter"
+      href="javascript:void(0)" data-filter="sortField=percent_funded" data-ol-has-click-handler="">Nearly Funded</a>
+    <a class="grid-4 grid-md-2 grid-lg-1 text_fontSizeSmall box_verticalPadded2 col_ggPrimary5DarkText js-searchFilter"
+      href="javascript:void(0)" data-filter="selectedThemes=children" data-ol-has-click-handler="">Children</a>
+    <a class="grid-4 grid-md-2 grid-lg-1 text_fontSizeSmall box_verticalPadded2 col_ggPrimary5DarkText js-searchFilter"
+      href="javascript:void(0)" data-filter="selectedThemes=disaster" data-ol-has-click-handler="">Disaster</a>
+    <a class="grid-4 grid-md-2 grid-lg-1 text_fontSizeSmall box_verticalPadded2 col_ggPrimary5DarkText js-searchFilter"
+      href="javascript:void(0)" data-filter="selectedThemes=edu" data-ol-has-click-handler="">Education</a>
+    <a class="grid-4 grid-md-2 grid-lg-1 text_fontSizeSmall box_verticalPadded2 col_ggPrimary5DarkText js-searchFilter"
+      href="javascript:void(0)" data-filter="selectedThemes=env" data-ol-has-click-handler="">Environment</a>
+    <a class="grid-4 grid-md-2 grid-lg-1 text_fontSizeSmall box_verticalPadded2 col_ggPrimary5DarkText js-searchFilter"
+      href="javascript:void(0)" data-filter="selectedThemes=health" data-ol-has-click-handler="">Health</a>
+    <a class="grid-4 grid-md-2 grid-lg-1 text_fontSizeSmall box_verticalPadded2 col_ggPrimary5DarkText js-searchFilter"
+      href="javascript:void(0)" data-filter="selectedThemes=tech" data-ol-has-click-handler="">Technology</a>
+    <a class="grid-4 grid-md-2 grid-lg-1 text_fontSizeSmall box_verticalPadded2 col_ggPrimary5DarkText js-searchFilter"
+      href="javascript:void(0)" data-filter="selectedThemes=gender" data-ol-has-click-handler="">Women &amp; Girls</a>
+
+    <a href="/search/"
+      class="grid-12 grid-lg-1 text_fontSizeSmall col_ggPrimary5Text box_verticalPadded2 text_allCaps">See All ›</a>
+  </div>
+
+  <!-- START OF HOMEWORK ASSIGNMENT CODE -->
+  <div class="grid-lg-padder box_horizontalPadded3 box_topPadded5 layout_center">
+    <div>
+      <h5 class="text_allCaps text_letterSpacingLoosest col_ggPrimary3DarkText box_bottomPadded3">
+        What we do
+      </h5>
+      <h3>
+        We are a nonprofit that empowers loval community-led nonprofits
+        through tools, training, and suport so then can make our world a
+        better place.
+      </h3>
+    </div>
+  </div>
+  <div class="grid-lg-padder layout_center box_verticalPadded4">
+    <div class="barSpacer_short grid-12 col_ggPrimary5VeryLight"></div>
+  </div>
+
+  <div class="grid-lg-padder grid-parent layout_center box_bottomPadded5">
+    <div class="grid-12 grid-lg-4 box_bottomPadded4">
+      <div class="box_horizontalPadded6 box_lg_horizontalPadded0">
+        <img src="./assets/tree.svg" height="80px" class="box_bottomMargin3" alt="illustration of a tree.">
+        <h5
+          class="text_allCaps text_letterSpacingLoosest col_ggPrimary3DarkText text_fontSizeSmaller box_bottomPadded2">
+          For Nonprofits:
+        </h5>
+        <p class="text_7n box_bottomMargin2">Support, training, and funding.</p>
+        <p class="text_fontSizeBase box_horizontalPadded6 box_lg_horizontalPadded0">Nonprofit organizations, big or
+          small, can get the exposure,
+          support,
+          encouragement, and tools they need to
+          become more effective.</p>
+        <button class="btn btn_simple btn_ggPrimary3Dark">Apply to join</button>
+      </div>
+    </div>
+    <div class="grid-12 grid-lg-4 box_bottomPadded4">
+      <div class="box_horizontalPadded6 box_lg_horizontalPadded3">
+        <img src="./assets/hand.svg" height="80px" class="box_bottomMargin3"
+          alt="illustration of a hand with a heart in the palm.">
+        <h5
+          class="text_allCaps text_letterSpacingLoosest col_ggPrimary1DarkText text_fontSizeSmaller box_bottomPadded2 box_botto">
+          For Donors:
+        </h5>
+        <p class="text_7n box_bottomMargin2">Safe, easy donations.</p>
+        <p class="text_fontSizeBase box_horizontalPadded6 box_lg_horizontalPadded0">Donors everywhere can give
+          confidently and securely to vetted, locally-driven
+          organizations around the world.
+        </p>
+        <button class="btn btn_simple btn_ggPrimary1">Find a project</button>
+      </div>
+    </div>
+    <div class="grid-12 grid-lg-4 box_bottomPadded4">
+      <div class="box_horizontalPadded6 box_lg_horizontalPadded0">
+        <img src="./assets/buildings.svg" height="80px" class="box_bottomMargin3" alt="illustration of buildings.">
+        <h5
+          class="text_allCaps text_letterSpacingLoosest col_ggPrimary2DarkText text_fontSizeSmaller box_bottomPadded2">
+          For Companies:
+        </h5>
+        <p class="text_7n box_bottomMargin2">Corporate giving, simplified.</p>
+        <p class="text_fontSizeBase box_horizontalPadded6 box_lg_horizontalPadded0">Companies can do more good with
+          their charitable donations through employee
+          engagement, gift cards and more.
+        </p>
+        <button class="btn btn_simple btn_ggPrimary2Darker">Do more good</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-parent img-bg img-bg-cover box_verticalPadded6 col_ggSecondary2Light"
+    style="background-image:url(./assets/background1.png)">
+    <div class="grid-0 grid-md-6"></div>
+    <div class="grid-12 grid-md-6 layout_center box_horizontalPadded5">
+      <h5 class="col_ggPrimary3LightText box_bottomPadded2">For nonprofits:</h5>
+      <h3 class="col_whiteText">Why Join GlobalGiving?</h3>
+      <p class="col_whiteText text_fontSizeBase box_bottomPadded2">You need a partner, not just a platform. Join
+        organizations like yours
+        from 170 countries and get training and
+        support tailored to you, access extra funding through our thematic matching campaigns, and improve your
+        fundraising and your impact with our powerful suite of tools.</p>
+      <button class="btn btn_simple btn_transparent">Apply Now</button>
+    </div>
+  </div>
+
+  <div class="grid-lg-padder layout_center box_horizontalPadded3 box_verticalPadded6">
+    <h3>Join the 200+ companies doing good around the world.</h3>
+    <p class="text_fontSizeBase">Is your company looking for ways to expand your philanthropic footprint? We have the
+      tools and programs you
+      need to enhance your corporate giving strategy, empower your stakeholders, and support local causes around the
+      world.</p>
+    <button class="btn btn_ggPrimary2Darker btn_simple">Learn More</button>
+  </div>
+
+  <div class="grid-parent">
+    <div class="grid-12 grid-md-6 grid-lg-4 grid-spacer">
+      <div class="col_ggPrimary2 box_padded5 layout_center ">
+        <div style="height:40px">
+          <picture>
+            <source srcset="./assets/miscorsoft_white.webp" type="image/webp">
+            <source srcset="./assets/miscorsoft_white.png" type="image/jpeg">
+            <img src="./assets/miscorsoft_white.png" alt="microsoft logo." style="max-height:100%; max-width:100%">
+          </picture>
+        </div>
+      </div>
+    </div>
+    <div class="grid-12 grid-md-6 grid-lg-4 grid-spacer">
+      <div class="col_ggPrimary2 box_padded5 layout_center">
+        <div style="height:40px">
+          <img src="./assets/facebook-logo-hi-res.svg" alt="facebook logo." style="max-height:100%; max-width:100%">
+        </div>
+      </div>
+    </div>
+    <div class="grid-12 grid-md-6 grid-lg-4 grid-spacer">
+      <div class="col_ggPrimary2 box_padded5 layout_center">
+        <div style="height:40px">
+          <picture>
+            <source srcset="./assets/ford_white.webp" type="image/webp">
+            <source srcset="./assets/ford_white.png" type="image/jpeg">
+            <img src="./assets/ford_white.png" alt="ford logo." style="max-height:100%; max-width:100%">
+          </picture>
+        </div>
+      </div>
+    </div>
+    <div class="grid-12 grid-md-6 grid-lg-4 grid-spacer">
+      <div class="col_ggPrimary2 box_padded5 layout_center">
+        <div style="height:40px">
+          <picture>
+            <source srcset="./assets/discovery_white.webp" type="image/webp">
+            <source srcset="./assets/discovery_white.png" type="image/jpeg">
+            <img src="./assets/discovery_white.png" alt="discovery communications logo."
+              style="max-height:100%; max-width:100%">
+          </picture>
+        </div>
+      </div>
+    </div>
+    <div class="grid-12 grid-md-6 grid-lg-4 grid-spacer">
+      <div class="col_ggPrimary2 box_padded5 layout_center">
+        <div style="height:40px">
+          <picture>
+            <source srcset="./assets/jetblue-white-reg.webp" type="image/webp">
+            <source srcset="./assets/jetblue-white-reg.png" type="image/jpeg">
+            <img src="./assets/jetblue-white-reg.png" alt="jetblue logo." style="max-height:100%; max-width:100%">
+          </picture>
+        </div>
+      </div>
+    </div>
+    <div class="grid-12 grid-md-6 grid-lg-4 grid-spacer">
+      <div class="col_ggPrimary2 box_padded5 layout_center">
+        <div style="height:40px">
+          <picture>
+            <source srcset="./assets/fidelity_white.webp" type="image/webp">
+            <source srcset="./assets/fidelity_white.png" type="image/jpeg">
+            <img src="./assets/fidelity_white.png" alt="fidelity charitable logo."
+              style="max-height:100%; max-width:100%">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-12 layout_center box_topPadded6">
+    <div class="img-bg-cover box_bottomPadded6 layout_heightAuto"
+      style="background-image:url('./assets/background2.png')">
+      <div class="box_bottomPadded6">
+        <div class="box_bottomPadded3 box_lg_bottomPadded6">
+          <div class="box_bottomPadded3 box_lg_bottomPadded6">
+            <div class="box_bottomPadded3 box_lg_bottomPadded6">
+              <div class="box_bottomPadded3 box_lg_bottomPadded6">
+                <div class="grid-lg-padder box_bottomPadded6 ">
+                  <h3 class="col_ggSecondary3DarkText">Our approach to disaster relief and recovery</h3>
+                  <p class="text_fontSizeBase box_horizontalPadded3 box_lg_horizontalPadded5">When a disaster happens,
+                    we can quickly send
+                    funds to the local
+                    organizations
+                    that
+                    are best suited to drive
+                    relief and recovery. Our vetted, locally-driven partner organizations are still hard at work driving
+                    recovery
+                    even after the news coverage has stopped. Local partners know what's best for their communities,
+                    especially
+                    in
+                    the face of disaster.</p>
+                  <button class="btn btn_simple btn_ggSecondary3">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- END OF HOMEWORK ASSIGNMENT CODE -->
+
+  <section class="layout_center  box_verticalPadded2">
+    <div class="grid-lg-padder box_horizontalPadded3 box_verticalPadded5 layout_center">
+      <div class="layout_centerVertical">
+        <form action="//globalgiving.us1.list-manage.com/subscribe/post?u=3cd22f53c66be5c139fe0dc7a&amp;id=7bd2052374"
+          method="post" class="grid-parent layout_center" target="_blank">
+          <p class="grid-12 text_7n">
+            Sign up for the GlobalGiving Newsletter
+          </p>
+          <input type="email" name="EMAIL" class="grid-8 grid-md-5 input_text col_ggPrimary5VeryLight" maxlength="200"
+            placeholder="you@example.com" required="" title="Email address" />
+          <button type="submit" class="btn btn_ggPrimary2 btn_simple">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="col_ggSecondary1Darker">
+      <div class="box_topPadded4 box_bottomPadded3 print_noPrint layout_centerVertical">
+        <div
+          class="grid-parent grid-padder box_lg_bottomPadded3 box_horizontalPadded2 grid-12 layout_center layout_centerVertical">
+          <div class="grid-12 grid5-lg-1 box_bottomMargin3 box_lg_bottomMargin0 layout_lg_alignLeft">
+            <a href="/"><img src="https://www.globalgiving.org/img/logos/gg_horizontal_white_400.png" alt="GlobalGiving"
+                border="0" style="width:180px; max-width:100%;" /></a>
+          </div>
+          <div
+            class="grid-12 grid-md-9 grid5-lg-2 box_bottomMargin3 box_lg_bottomMargin0 box_lg_rightPadded3 text_fontSizeSmaller col_ggSecondary1LighterText layout_lg_alignLeft">
+            <span id="footer_descrip1">GlobalGiving makes it easy and safe for you to give to local
+              projects anywhere in the world,</span>
+            <span id="footer_descrip2">while providing nonprofits with the tools, training, and
+              support they need to become more effective.</span>
+          </div>
+          <div class="grid-12 grid5-lg-1 box_bottomMargin3 box_lg_bottomMargin0 layout_lg_alignLeft">
+            <a href="https://support.globalgiving.org/" target="_blank"
+              class="btn btn_transparent btn_simple btn_ggPrimary1">Help Center</a>
+          </div>
+          <div class="grid-12 grid5-lg-1 box_bottomMargin3 box_lg_bottomMargin0 layout_lg_alignLeft">
+            <div class="grid-9 grid-md-6 grid-lg-12">
+              <div class="grid-parent">
+                <div class="grid-4">
+                  <a href="http://facebook.com/globalgiving" class="layout_centerVertical">
+                    <div class="sprite sprite_facebook_tan text_fontSizeZero">
+                      facebook
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-4">
+                  <a href="http://twitter.com/globalgiving" class="layout_centerVertical">
+                    <div class="sprite sprite_twitter_tan text_fontSizeZero">
+                      twitter
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-4">
+                  <a href="http://instagram.com/globalgiving" class="layout_centerVertical">
+                    <div class="sprite sprite_instagram_tan text_fontSizeZero">
+                      instagram
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text_fontSizeZero">
+          <div class="grid-0 grid-lg-12 barSpacer_short col_ggSecondary1Dark"></div>
+        </div>
+        <nav class="grid-12 grid-parent grid-padder box_topPadded2 box_horizontalPadded2">
+          <hr class="grid-12 grid-lg-0" />
+          <div class="grid-12 grid5-lg-1">
+            <h4 class="grid-parent box_verticalMargin1 layout_centerVertical">
+              <a href="/give/" class="grid-11 grid-lg-12 col_ggPrimary1Text text_title">Donors</a>
+              <a href="javascript:void(0)" class="grid-1 grid-lg-0"
+                onclick="$(this).children().first().toggleClass('icon_chevron-rotateDown').end().end().parent().next().slideToggle();">
+                <img src="https://www.globalgiving.org/img/svg/icons/icon_chevron.svg" alt="toggle arrow"
+                  class="icon_chevron" width="16" />
+              </a>
+            </h4>
+            <div class="grid-0 grid-lg-12 text_fontSizeSmaller">
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/gifts/">Give or Redeem Gift Cards</a>
+              </div>
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/gifts/inhonor/">Donate in Honor</a>
+              </div>
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/project-of-the-month-club/">Project of the Month Club</a>
+              </div>
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/fundraisers/">Start a Fundraiser</a>
+              </div>
+            </div>
+          </div>
+          <hr class="grid-12 grid-lg-0" />
+          <div class="grid-12 grid5-lg-1">
+            <h4 class="grid-parent box_verticalMargin1 layout_centerVertical">
+              <a href="/nonprofits/" class="grid-11 grid-lg-12 col_ggPrimary1Text text_title">Nonprofits</a>
+              <a href="javascript:void(0)" class="grid-1 grid-lg-0"
+                onclick="$(this).children().first().toggleClass('icon_chevron-rotateDown').end().end().parent().next().slideToggle();">
+                <img src="https://www.globalgiving.org/img/svg/icons/icon_chevron.svg" alt="toggle arrow"
+                  class="icon_chevron" width="16" />
+              </a>
+            </h4>
+            <div class="grid-0 grid-lg-12 text_fontSizeSmaller">
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/apply/">Start an Application</a>
+              </div>
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/nonprofits/">Why Join?</a>
+              </div>
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="http://tools.blog.globalgiving.org/">Insider Blog</a>
+              </div>
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/aboutus/fee/">Pricing &amp; Fees</a>
+              </div>
+            </div>
+          </div>
+          <hr class="grid-12 grid-lg-0" />
+          <div class="grid-12 grid5-lg-1">
+            <h4 class="grid-parent box_verticalMargin1 layout_centerVertical">
+              <a href="/companies/" class="grid-11 grid-lg-12 col_ggPrimary1Text text_title">Companies</a>
+              <a href="javascript:void(0)" class="grid-1 grid-lg-0"
+                onclick="$(this).children().first().toggleClass('icon_chevron-rotateDown').end().end().parent().next().slideToggle();">
+                <img src="https://www.globalgiving.org/img/svg/icons/icon_chevron.svg" alt="toggle arrow"
+                  class="icon_chevron" width="16" />
+              </a>
+            </h4>
+            <div class="grid-0 grid-lg-12 text_fontSizeSmaller">
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/companies/">Our Services</a>
+              </div>
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/companies/partners/">Our Partners</a>
+              </div>
+              <!--<div class="box_bottomPadded2"><a class="col_whiteText" href="/companies/case-studies/">Case Studies</a></div>-->
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/companies/gift-cards/">Corporate Gift Cards</a>
+              </div>
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/csr/">CSR Made Simple</a>
+              </div>
+            </div>
+          </div>
+          <hr class="grid-12 grid-lg-0" />
+          <div class="grid-12 grid5-lg-1">
+            <h4 class="grid-parent box_verticalMargin1 layout_centerVertical">
+              <a href="/aboutus/" class="grid-11 grid-lg-12 col_ggPrimary1Text text_title">About Us</a>
+              <a href="javascript:void(0)" class="grid-1 grid-lg-0"
+                onclick="$(this).children().first().toggleClass('icon_chevron-rotateDown').end().end().parent().next().slideToggle();">
+                <img src="https://www.globalgiving.org/img/svg/icons/icon_chevron.svg" alt="toggle arrow"
+                  class="icon_chevron" width="16" />
+              </a>
+            </h4>
+            <div class="grid-0 grid-lg-12 text_fontSizeSmaller">
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/aboutus/who-we-are/staff/">Our Team</a>
+              </div>
+              <!--<div class="box_bottomPadded2"><a class="col_whiteText" href="/aboutus/impact/">Our Impact</a></div>-->
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/aboutus/jobs/">Jobs</a>
+              </div>
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" target="_blank" href="https://support.globalgiving.org/">FAQs</a>
+              </div>
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/aboutus/contact/">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          <hr class="grid-12 grid-lg-0" />
+          <div class="grid-12 grid5-lg-1">
+            <h4 class="grid-parent box_verticalMargin1 layout_centerVertical">
+              <a href="/learn/" class="grid-11 grid-lg-12 col_ggPrimary1Text text_title">Learn Library</a>
+              <a href="javascript:void(0)" class="grid-1 grid-lg-0"
+                onclick="$(this).children().first().toggleClass('icon_chevron-rotateDown').end().end().parent().next().slideToggle();">
+                <img src="https://www.globalgiving.org/img/svg/icons/icon_chevron.svg" alt="toggle arrow"
+                  class="icon_chevron" width="16" />
+              </a>
+            </h4>
+            <div class="grid-0 grid-lg-12 text_fontSizeSmaller">
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/learn/nonprofits/">Nonprofit Resources</a>
+              </div>
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/learn/companies/">Corporate Giving Resources</a>
+              </div>
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/learn/donors/">Donor Resources</a>
+              </div>
+              <div class="box_bottomPadded2">
+                <a class="col_whiteText" href="/learn/category/success-stories/">Success Stories</a>
+              </div>
+            </div>
+          </div>
+          <hr class="grid-12 grid-lg-0" />
+        </nav>
+      </div>
+      <div class="text_fontSizeZero">
+        <div class="grid-0 grid-lg-12 barSpacer_short col_ggSecondary1Dark"></div>
+      </div>
+      <div class="grid-padder grid-parent layout_centerVertical box_horizontalPadded2 box_bottomPadded1">
+        <a href="/aboutus/news-media/" class="grid-12 grid-lg-6 box_topPadded1 layout_center layout_lg_alignLeft">
+          <div class="text_fontSizeZero">
+            <div class="layout_inlineBlock box_rightPadded2">
+              <div class="sprite sprite_wp layout_inlineBlock">
+                Washington Post
+              </div>
+            </div>
+            <div class="layout_inlineBlock box_rightPadded2">
+              <div class="sprite sprite_cnn layout_inlineBlock">CNN</div>
+            </div>
+            <div class="layout_inlineBlock box_rightPadded2">
+              <div class="sprite sprite_npr layout_inlineBlock">NPR</div>
+            </div>
+            <div class="sprite sprite_nyt layout_inlineBlock">
+              New York Times
+            </div>
+          </div>
+        </a>
+        <div
+          class="layout_center layout_lg_alignRight grid-12 grid-lg-6 box_topPadded1 box_bottomPadded3 box_lg_bottomPadded0">
+          <a href="http://www.bbb.org/charity-reviews/national/other/globalgiving-foundation-in-washington-dc-3204"
+            target="_blank" class="box_rightPadded2 text_fontSizeZero">
+            <div class="sprite sprite_bbb layout_inlineBlock box_rightPadded2">
+              BBB Accredited Charity
+            </div>
+          </a>
+          <a href="http://www.charitynavigator.org/index.cfm?bay=search.summary&amp;orgid=11648" target="_blank"
+            class="box_rightPadded2 text_fontSizeZero">
+            <div class="sprite sprite_charityNavigator layout_inlineBlock box_rightPadded2">
+              Charity Navigator Four Star Charity
+            </div>
+          </a>
+          <a href="https://www.mcafeesecure.com/verify?host=www.globalgiving.org" target="_blank"
+            class="text_fontSizeZero">
+            <div class="sprite sprite_secureSite layout_inlineBlock">
+              SSL- and PCI-Verified Secure Site
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col_ggSecondary1 layout_centerVertical">
+      <div class="grid-padder box_md_horizontalPadded2 grid-parent layout_centerVertical">
+        <div
+          class="grid-12 grid-lg-7 layout_center layout_lg_alignLeft text_fontSizeSmallest box_topPadded2 box_lg_topPadded0">
+          <address class="layout_inlineBlock col_ggSecondary1LighterText text_4n">
+            <!-- #### The line of text below is used in site uptime monitors. Any edits to this line need to be coordinated with DevOps #### -->
+            ©&nbsp;Copyright&nbsp;2000-2019&nbsp;GlobalGiving,
+            a&nbsp;501(c)3&nbsp;organization
+            (EIN:&nbsp;30‑0108263;&nbsp;UK&nbsp;Charity&nbsp;#&nbsp;1122823)
+            <!-- #### The line of text above is used in site uptime monitors. Any edits to this line need to be coordinated with DevOps #### -->
+            <br />
+            <span class="col_ggSecondary1LighterText">1110 Vermont Ave NW, Ste 550, Washington, DC 20005, USA</span>
+            <span class="col_whiteText">&nbsp;&nbsp;Questions?&nbsp;&nbsp;<a class="col_ggPrimary1Text"
+                href="/aboutus/contact/">Contact Us</a></span>
+          </address>
+        </div>
+        <div
+          class="grid-12 grid-lg-5 box_leftPaddedHalf layout_centerVertical grid-parent layout_center layout_lg_alignRight text_fontSizeSmallest print_noPrint text_allCaps text_7n col_ggPrimary1Text box_verticalPadded3">
+          <div
+            class="grid-12 grid-md-inline layout_center grid-parent layout_centerVertical text_fontSizeLarge layout_rel box_bottomPadded3 box_md_bottomPadded0">
+            <select
+              class="col_ggPrimary1DarkText col_transparent border_primary1 border_thin input_preventDisplay js-global-user-currency-select"
+              title="Choose your currency">
+              <option value="AUD">$ AUD</option>
+              <option value="CAD">$ CAD</option>
+              <option value="EUR">€ EUR</option>
+              <option value="GBP">£ GBP</option>
+              <option selected="" value="USD">$ USD</option>
+            </select>
+          </div>
+          <span class="grid-0 grid-md-inline box_horizontalPadded1 box_lg_horizontalPadded0">&nbsp;·&nbsp;</span>
+          <a class="col_whiteText" href="/aboutus/privacy/">Privacy</a><span
+            class="box_horizontalPadded1 box_lg_horizontalPadded0">&nbsp;·&nbsp;</span>
+          <a class="col_whiteText" href="/aboutus/cookies/">Cookies</a><span
+            class="box_horizontalPadded1 box_lg_horizontalPadded0">&nbsp;·&nbsp;</span>
+          <a class="col_whiteText" href="/aboutus/terms/">Terms</a><span
+            class="box_horizontalPadded1 box_lg_horizontalPadded0">&nbsp;·&nbsp;</span>
+          <a class="col_whiteText" href="/aboutus/fee/">Pricing</a><span
+            class="box_horizontalPadded1 box_lg_horizontalPadded0">&nbsp;·&nbsp;</span>
+          <a class="col_whiteText" href="/api/">API</a><span
+            class="box_horizontalPadded1 box_lg_horizontalPadded0">&nbsp;·&nbsp;</span>
+          <a class="col_whiteText" href="/open-data/">Data</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
